@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Resume Studio</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header class="topbar">
+            <div class="brand">Resu<span>Me</span> Studio</div>
+            <button class="export-btn" id="exportBtn">Export PDF</button>
+        </header>
+
+        <main class="app">
+            <!-- LEFT: FORM -->
+            <section class="form-section">
+                <h1>Fill Resume Info</h1>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="nameInput">Full name</label>
+                        <input id="nameInput" type="text" placeholder="e.g John Doe"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="jobInput">Title / role</label>
+                        <input id="jobInput" type="text" placeholder="e.g Frontend Developer"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="emailInput">Email</label>
+                        <input id="emailInput" type="email" placeholder="e.g example@email.com"/>
+                    </div>
+                    
+
+                    <div class="field">
+                        <label for="phoneInput">Phone</label>
+                        <input id="phoneInput" type="text" placeholder="e.g +92 000 0000000"/>
+                    </div>
+                    <div class="field">
+                        <label for="emailInput">linkedin  </label>
+                        <input id="linkedinInput" type="linkedin" placeholder="Linkedin URL "/>
+                    </div>
+                    <div class="field">
+                        <label for="emailInput">Git Hub  </label>
+                        <input id="GithubInput" type="GitHub" placeholder="Linkedin URL "/>
+                    </div>
+                </div>
+
+                <div class="field full-width">
+                    <label for="aboutInput">Summary</label>
+                    <textarea id="aboutInput" placeholder="One or two sentences about yourself"></textarea>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="section-heading">
+                    <h2>Projects</h2>
+                    <button class="add-btn" id="addProjectBtn">Add project</button>
+                </div>
+                <div id="projectsContainer">
+                <!-- === PROJECTS WILL BE ADDED HERE === -->
+                </div>
+
+                <div class="section-divider"></div>
+
+                <div class="section-heading">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="skills-field">
+                    <input id="skillInput" type="text" placeholder="Type a skill and press enter"/>
+
+                    <div id="skillsContainer">
+                  
+                    </div>
+                </div>
+            </section>
+            
+            <!-- RIGHT: RESUME -->
+            <section class="preview-section">
+                <div class="resume">
+                    <h1 id="resumeName">Your Name</h1>
+                    <h3 id="resumeJob">Job Title</h3>
+            
+                    <!-- <p id="resumeContact">
+                        example@gmail.com |
+                        +92 000 0000000 |
+                        <a id="resumeLinkedin" href="#">LinkedIn</a> |
+                        <a id="resumeGithub" href="#">GitHub</a>
+                    </p> -->
+                    <p id="resumeContact">
+                        <span id="resumeEmail">example@gmail.com</span> |
+                        <span id="resumePhone">+92 000 0000000</span> |
+                        <a id="resumeLinkedin" href="#">LinkedIn</a > |
+                        <a id="resumeGithub" href="#">GitHub</a>
+                    </p>
+
+                    <section class="resume-section">
+                        <h2>PROFILE</h2>
+                        <div class="section-line"></div>
+                        <p id="resumeAbout" class="placeholder-text">
+                            Write About Your Self
+                        </p>
+                    </section>
+
+                    <section class="resume-section">
+                        <h2>PROJECTS</h2>
+                        <div class="section-line"></div>
+                        <div id="resumeProjects">
+                            <p class="placeholder-text">No projects added yet.</p>
+                        </div>
+                    </section>
+
+                    <section class="resume-section">
+                        <h2>SKILLS</h2>
+                        <div class="section-line"></div>
+                        <div id="resumeSkills">
+                            <p class="placeholder-text">No skills added yet</p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
